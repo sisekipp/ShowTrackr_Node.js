@@ -10,7 +10,7 @@
     <link href="stylesheets/style.css" rel="stylesheet">
 </head>
 <body>
-<div class="navbar navbar-default navbar-static-top"
+<div ng-controller="NavbarCtrl" class="navbar navbar-default navbar-static-top"
      role="navigation" bs-navbar>
     <div class="navbar-header">
         <a class="navbar-brand" href="/">
@@ -34,21 +34,37 @@
 
 <div ng-view></div>
 
-<script src="vendor/angular.js"></script>
-<script src="vendor/angular-strap.js"></script>
-<script src="vendor/angular-strap.tpl.js"></script>
-<script src="vendor/angular-messages.js"></script>
-<script src="vendor/angular-resource.js"></script>
-<script src="vendor/angular-route.js"></script>
-<script src="vendor/angular-cookies.js"></script>
-<script src="vendor/moment.min.js"></script>
+<script src="app.min.js"></script>
+<script src="templates.js"></script>
 
-<script src="app.js"></script>
+<!--<script src="vendor/angular.js"></script>-->
+<!--<script src="vendor/angular-strap.js"></script>-->
+<!--<script src="vendor/angular-strap.tpl.js"></script>-->
+<!--<script src="vendor/angular-messages.js"></script>-->
+<!--<script src="vendor/angular-resource.js"></script>-->
+<!--<script src="vendor/angular-route.js"></script>-->
+<!--<script src="vendor/angular-cookies.js"></script>-->
+<!--<script src="vendor/moment.min.js"></script>-->
 
-<!-- Controller -->
-<script src="controllers/main.js"></script>
+<!--<script src="app.js"></script>-->
 
-<!-- Services -->
-<script src="services/show.js"></script>
+<!--&lt;!&ndash; Controller &ndash;&gt;-->
+<!--<script src="controllers/main.js"></script>-->
+<!--<script src="controllers/add.js"></script>-->
+<!--<script src="controllers/details.js"></script>-->
+<!--<script src="controllers/signup.js"></script>-->
+<!--<script src="controllers/login.js"></script>-->
+<!--<script src="controllers/navbar.js"></script>-->
+
+<!--&lt;!&ndash; Services &ndash;&gt;-->
+<!--<script src="services/show.js"></script>-->
+<!--<script src="services/subscription.js"></script>-->
+<!--<script src="services/auth.js"></script>-->
+
+<!--&lt;!&ndash; Filters &ndash;&gt;-->
+<!--<script src="filters/fromNow.js"></script>-->
+
+<!--&lt;!&ndash; Directives &ndash;&gt;-->
+<!--<script src="directives/repeatPassword.js"></script>-->
 </body>
 </html>
