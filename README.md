@@ -27,12 +27,13 @@ Produktion: `npm run build && npm start`
 | -------------- | --------------------------------------- |
 | `MONGODB_URI`  | MongoDB-Verbindungsstring               |
 | `AUTH_SECRET`  | Secret für die Session-Signierung       |
-| `TVDB_API_KEY` | API-Key für TheTVDB                     |
+| `TVDB_API_KEY` | TheTVDB-v4-API-Key (Dashboard → API Keys) |
+| `TVDB_PIN`     | optional, nur bei Subscriber-Key        |
 | `SMTP_*`       | SMTP-Zugangsdaten für Alert-Mails       |
 | `MAIL_FROM`    | Absenderadresse der Alert-Mails         |
 
 ## Hinweis
 
-Die verwendete TheTVDB-v1-API (`thetvdb.com/api/...`) ist veraltet. Für den
-Produktivbetrieb sollte auf die TVDB API v4 oder TMDB migriert werden
-(siehe `lib/tvdb.js`).
+Serien-Daten kommen von der TheTVDB **API v4** (`api4.thetvdb.com/v4`, siehe
+`lib/tvdb.js`): Login per API-Key, Suche per `/search?type=series`, Details +
+Episoden per `/series/{id}/extended?meta=episodes`.
